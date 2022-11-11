@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
+import Sidebar from "./components/Sidebar";
+import Home from "./views/Home";
+import Incidents from "./views/Incidents";
+import KbArticle from "./views/KbArticle";
+import Login from "./views/Login";
+import Ticket from "./views/Ticket";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ScrollToTop />
+      <div className="App">
+        <Switch>
+          <Route exact path="/">
+            <Redirect to="/login" />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/ticket">
+            <Ticket />
+          </Route>
+          <Route path="/kbarticle">
+            <KbArticle />
+          </Route>
+          <Route path="/incidents">
+            <Incidents />
+          </Route>
+        </Switch>
+      </div >
+    </Router>
+
   );
 }
 
