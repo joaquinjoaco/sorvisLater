@@ -10,10 +10,9 @@ const Login = () => {
      }
 
      return (
-          <body className="login">
-
+          <div className="login-wrapper">
                <div className="formWrapper login">
-                    <form className="form login">
+                    <form className="form-login">
                          <p className="subtitle login">Log in now, or<span> later!</span></p>
                          <p className="title login">sorvis<span>Later</span></p>
                          <div className="input-container ic1 login">
@@ -29,7 +28,7 @@ const Login = () => {
                          <button onClick={handleClick} className="loginBtn">login</button>
                     </form>
                </div >
-          </body >
+          </div>
 
      );
 }

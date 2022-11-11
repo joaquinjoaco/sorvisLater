@@ -1,3 +1,4 @@
+import Card from "../components/Card";
 import Sidebar from "../components/Sidebar";
 
 const Incidents = () => {
@@ -7,42 +8,18 @@ const Incidents = () => {
                <div className="content">
                     <p className="title">Incidents</p>
                     <div className="resultsWrapper">
-                         <div className="result">
-                              <p className="kbID">INC0000038</p>
-                              <p className="kbTitle">lack of sex</p>
-                              <button onclick="location.href='/ticket'" className="button" form="save">Open</button>
-                         </div>
 
-                         <div className="result">
-                              <p className="kbID">INC0000039</p>
-                              <p className="kbTitle">postulación staff</p>
-                              <button onclick="location.href='ticket.html'" className="button" form="save">Open</button>
-                         </div>
-                         <div className="result">
-                              <p className="kbID">INC0000040</p>
-                              <p className="kbTitle">items</p>
-                              <button onclick="location.href='ticket.html'" className="button" form="save">Open</button>
-                         </div>
-                         <div className="result">
-                              <p className="kbID">INC0000041</p>
-                              <p className="kbTitle">ayuda-svmati</p>
-                              <button onclick="location.href='ticket.html'" className="button" form="save">Open</button>
-                         </div>
-                         <div className="result">
-                              <p className="kbID">INC0000041</p>
-                              <p className="kbTitle">aldeanos</p>
-                              <button onclick="location.href='ticket.html'" className="button" form="save">Open</button>
-                         </div>
-                         <div className="result">
-                              <p className="kbID">INC0000041</p>
-                              <p className="kbTitle">cuenta</p>
-                              <button onclick="location.href='ticket.html'" className="button" form="save">Open</button>
-                         </div>
-                         <div className="result">
-                              <p className="kbID">INC0000041</p>
-                              <p className="kbTitle">fpspack-crash</p>
-                              <button onClick="location.href='ticket.html'" className="button" form="save">Open</button>
-                         </div>
+                         <Card id='INC0000038' title='voter-keys' path='/ticket' />
+                         <Card id='INC0000039' title='spawn-error' path='/ticket' />
+                         <Card id='INC0000040' title='online-shop-error' path='/ticket' />
+                         <Card id='INC0000041' title='supplies-issue' path='/ticket' />
+                         <Card id='INC0000042' title='account-migration' path='/ticket' />
+                         <Card id='INC0000043' title='account-migration' path='/ticket' />
+                         <Card id='INC0000044' title='account-migration' path='/ticket' />
+                         <Card id='INC0000045' title='bug-lost-pickaxe' path='/ticket' />
+                         <Card id='INC0000046' title='bug-player-death' path='/ticket' />
+                         <Card id='INC0000047' title='structure-relocation' path='/ticket' />
+
                     </div>
                </div>
           </div>

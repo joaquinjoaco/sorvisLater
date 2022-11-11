@@ -52,17 +52,17 @@ const Sidebar = () => {
                               </li>
 
                               <li className="nav-link">
-                                   <a href="myinclist.html">
+                                   <Link to="/assigned">
                                         <i className="bx bx-user-pin icon"></i>
                                         <span className="text nav-text">My incidents</span>
-                                   </a>
+                                   </Link>
                               </li>
 
                               <li className="nav-link">
-                                   <a href="kblist.html">
+                                   <Link to="/knowledgebasearticles">
                                         <i className="bx bx-book-bookmark icon"></i>
                                         <span className="text nav-text">KB articles</span>
-                                   </a>
+                                   </Link>
                               </li>
 
                               <li className="nav-link">

@@ -5,13 +5,13 @@ const KbArticle = () => {
      return (
           <div className="kbarticle">
                <Sidebar />
-               <div classNameName="content">
+               <div className="content">
                     <Navbar />
                     <div className="formWrapper">
                          <form id="save" className="form">
                               <div className="bottomGrid kb" id="">
-                                   <p id="kbArticlePkb" className="inputLabel kb">Knowledge article</p>
-                                   <input id="kbArticleIkb" name="kbarticle" className="input kb" type="text" placeholder=" " />
+                                   <p id="kbArticlePkb" className="inputLabel kb">Knowledge article id</p>
+                                   <input id="kbArticleIkb" name="kbarticle" className="input kb" type="text" placeholder=" " readOnly />
 
                                    <p id="titlePkb" className="inputLabel kb">Title</p>
                                    <input id="titleIkb" name="title" className="input kb" type="text" placeholder=" " />

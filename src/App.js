@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
-import Sidebar from "./components/Sidebar";
+import Assigned from "./views/Assigned";
 import Home from "./views/Home";
 import Incidents from "./views/Incidents";
 import KbArticle from "./views/KbArticle";
+import KBList from "./views/KBList";
 import Login from "./views/Login";
 import Ticket from "./views/Ticket";
 
@@ -31,6 +32,12 @@ function App() {
           </Route>
           <Route path="/incidents">
             <Incidents />
+          </Route>
+          <Route path="/assigned">
+            <Assigned />
+          </Route>
+          <Route path="/knowledgebasearticles">
+            <KBList />
           </Route>
         </Switch>
       </div >

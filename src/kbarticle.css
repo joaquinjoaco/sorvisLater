@@ -43,6 +43,10 @@
   align-self: start;
 }
 
+#kbArticleIkb {
+  background-color: #454545;
+}
+
 #kbArticleIkb,
 #titleIkb {
   padding: 10px;
