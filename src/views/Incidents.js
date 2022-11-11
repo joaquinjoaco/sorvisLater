@@ -6,7 +6,7 @@ const Incidents = () => {
           <div className="incidents">
                <Sidebar />
                <div className="content">
-                    <p className="title">Incidents</p>
+                    <p className="titleKB">Incidents</p>
                     <div className="resultsWrapper">
 
                          <Card id='INC0000038' title='voter-keys' path='/ticket' />
