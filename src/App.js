@@ -7,6 +7,7 @@ import KbArticle from "./views/KbArticle";
 import KBList from "./views/KBList";
 import Login from "./views/Login";
 import Ticket from "./views/Ticket";
+import NotFound from "./views/NotFound";
 
 
 function App() {
@@ -38,6 +39,9 @@ function App() {
           </Route>
           <Route path="/knowledgebasearticles">
             <KBList />
+          </Route>
+          <Route path="*">
+            <NotFound />
           </Route>
         </Switch>
       </div >

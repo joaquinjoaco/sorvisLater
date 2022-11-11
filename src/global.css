@@ -20,3 +20,38 @@
 body {
   background-color: var(--bg);
 }
+
+/* not found */
+
+.not-found {
+  display: block;
+  width: 60vw;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.h1-notfound {
+  color: #c4c4c4;
+  font-size: 4rem;
+  font-weight: 600;
+
+  text-align: left;
+}
+
+.h2-notfound {
+  margin-top: 20rem;
+  color: #c4c4c4;
+  font-size: 3rem;
+  font-weight: 600;
+
+  text-align: left;
+}
+
+.link-notfound {
+  display: block;
+  text-decoration: underline;
+  color: #695cfe;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
